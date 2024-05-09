@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* overflow: hidden; */
+    font-family: "Playfair Display", serif;
+    color: white !important;
+}
+html::-webkit-scrollbar{
+    width: 0.3rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background:aquamarine;
+}
+lottie-player {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw; 
+    height: 100vh;
+    background: rgb(0, 1, 53);
+    z-index: -1; 
+    overflow: hidden; 
+    object-fit: cover; 
+    display: block;
+}
+.navbar-collapse {
+    justify-content:space-around;
+
+}
+.nav-item .nav-link {
+    color: aquamarine !important;  
+    position: relative !important;
+    font-family: 'Great Vibes', sans-serif; 
+}
+
+.nav-link::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;  
+    left: 0 !important;
+    width: 0% !important;
+    height: 3px !important;
+    background-color: white !important;  
+    transition: width 0.4s ease-in-out !important;  
+}
+
+.navbar-nav .nav-item:hover .nav-link::after {
+    width: 100% !important;
+}
+.navbar{
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1;
+    width: 100% !important;
+}
+.navbar-brand img{
+    border-radius: 1.5em;
+}
+/* Home */
+.home{
+    margin-top: 8em;
+}
+.home .home-shell{
+    padding: 3em;
+    border-radius:1em;
+    box-shadow: 4px 4px 14px aquamarine, -4px -4px 14px aquamarine;
+}
+.home-shell h1{
+    color: aqua ;
+    text-align: center;
+}
+.home-shell img{
+    object-fit: cover;
+    border-radius: 1em;
+    height: max-content;
+    width: 100vw;
+    /* border-radius: 2em !important; */
+    
+}
+.home-shell img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+/* about*/
+/* .cl h1::after{
+    content: '';
+    position: absolute;
+    left:7em;
+    height: 3px;
+    width:68px;
+    background-color:white ;
+    top: 48px;
+}
+.cl h1{
+    position: relative !important;
+} */
+#About{
+    margin-top: 6em;
+}
+
+/* carousel */
+#carouselExampleAutoplaying .card img{
+    height: 300px;
+    width: 100%;
+}
+.card-title{
+    color: black;
+    font-weight: bolder;
+}
+.card-text{
+    color: gray;
+}
+.card-body a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+  
+/* TOYS */
+#Toys{
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+#Toys .card{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.card {
+    cursor: pointer;
+    margin-top: 3em;
+    box-shadow: 4px 4px 14px aquamarine, -4px -4px 14px aquamarine;
+}
+.card img:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+hr{
+    box-shadow: 4px 4px 14px aquamarine, -4px -4px 14px aquamarine !important;
+}
